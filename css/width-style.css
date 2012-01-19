@@ -1,0 +1,6 @@
+#topbar { position: fixed; }
+#topbar nav { position: static; }
+#topbar nav li a { text-align:right }
+.post-entry header,.post header {
+	text-align: left;
+}

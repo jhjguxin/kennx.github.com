@@ -1,0 +1,283 @@
+body { background-color: #FFF; font-family: Georgia, ""pmingliu"", "Times New Roman", serif }
+a { color: #000; text-decoration: none; border-bottom: 1px dotted #000 }
+a:hover { color: #666; border-bottom-color: #666 }
+
+#topbar {
+	position: relative;
+	padding:1em 0;
+}
+
+#brand {
+	width: 93px;
+	height: 122px;
+	margin: 0 auto;
+}
+#site-title {
+	padding: 0;
+	margin: 0;
+}
+#site-title a {
+	display: block;
+	text-indent: -99999px;
+	width: 93px;
+	height: 122px;
+	border-bottom: none;
+	overflow: hidden;
+	background: url(../images/logo.png) no-repeat 0 0;
+	-webkit-transition: background-position .4s;
+	-moz-transition: background-position .4s;
+	-o-transition: background-position .4s;
+	transition: background-position .4s;
+}
+#site-title a:hover {
+	background-position: 0 -122px;
+	-webkit-transition: background-position .4s;
+	-moz-transition: background-position .4s;
+	-o-transition: background-position .4s;
+	transition: background-position .4s;
+}
+#post-nav,
+#page-nav {
+	position: absolute;
+	top: 1.5em;
+	width: 90px;
+	font-size: 12px;
+
+}
+
+#post-nav ul,
+#page-nav ul {
+	margin: 0;
+	list-style: none;
+	line-height: 1.6;
+}
+#post-nav {
+	left: 30%;
+	text-align: right;
+}
+#page-nav {
+	right: 30%;
+	text-align: left;
+}
+#post-nav ul li a,
+#page-nav ul li a {
+	display:block;
+	padding:0 15px;
+	border-bottom-color:#DDD;
+}
+#post-nav ul li,
+#page-nav ul li {
+	position: relative;
+}
+#post-nav ul li sup {
+	display:none;
+	width:5px;
+	height:5px;
+	background-color:#000;
+	position: absolute;
+	right: 0;
+	top:8px;
+}
+#page-nav ul li sup {
+	display:none;
+	width:5px;
+	height:5px;
+	background-color:#000;
+	position: absolute;
+	left: 0;
+	top:8px;
+}
+#post-nav ul li:hover sup,
+#page-nav ul li:hover sup {
+	display:block;
+}
+#topbar h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 2;
+}
+#post-nav h3,
+#page-nav h3 {
+	background-color:#000;
+	color:#FFF;
+	padding:0 10px;
+	display:block;
+}
+#page-wrap {
+	width: 960px;
+	margin: 1em auto;
+}
+.post-entry, .post {
+	margin-bottom: 3em;
+	width: 960px;
+	clear: both;
+}
+#page-wrap:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.post-entry header,.post header {
+	text-align: center;
+}
+.post-entry header h1,.post header h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+.post-entry header .entry-info,.post header .info {
+	font-size: 12px;
+	margin-top: 1em;
+	color: #666;
+}
+.post-entry-content {
+	position: relative;
+	padding-left: 50px;
+	background-color: #F7F7F7;
+}
+.post-entry-content code {
+	font-family: 'Ubuntu Mono' ;
+	background-color: #07F;
+	border: 1px dotted #CCC;
+	color: #FFF;
+}
+.post-entry-content .sym {
+	font-family: Arial;
+	font-weight:bold;
+	font-size: 40px;
+	line-height: 1;
+	height:40px;
+	position: absolute;
+	top: -.3em;
+	left: .5em;
+}
+.post-entry-comments {
+	text-align:right;
+	margin-top:1em;
+	font-size:11px;
+	color:#666;
+}
+
+#page-footer {
+  text-align:center;
+  padding: 2em 0;
+  background-color: #000;
+  color: #FFF;
+}
+#page-footer a {
+	color: #FFF;
+	border-bottom-color :#FFF;
+}
+#page-footer:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.post-content {
+	margin-top:3em
+}
+
+.comments {
+	border-top:1px dotted #000;
+	float:left;
+	width:960px;
+}
+.comments ol {
+	margin:0;
+	list-style:none;
+	float:left;
+	width:960px;
+}
+.comments ol li {
+	float:left;
+	width:960px;
+	margin-bottom:2em;
+}
+.comments ol li .avatar {
+	float:left;width:90px;
+}
+.comments ol li .content {
+	float:left;width:820px;
+	background-color:#000;
+	color:#FFF;padding:15px;
+	position: relative;
+	border:5px solid #FFF;
+	box-shadow: 0 0 5px #888;
+}
+.comments ol li .created_at {
+	text-align:right;
+	font-size:12px;
+	color:#999;
+	margin-top:1em;
+}
+.comments .arrow {
+	position: absolute;
+	width:1px;height:1px;left:-15px;top:15px;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid black;
+}
+
+
+.comments .avatar img { 
+	border-radius:50%;
+	box-shadow: 1px 2px 1px #999;
+}
+
+.comments-title,
+.created-comment-title { text-align:center;font-weight:normal;float:left;width:960px; }
+
+#created-comment {
+	border-top:1px dotted #000;
+	float:left;width:960px;
+}
+#created-comment .clearfix {
+	margin:1em 0;
+	font-size:12px;
+	color:#666;
+}
+#created-comment .clearfix input,
+#created-comment .clearfix textarea {
+	font-size:14px;
+	padding:4px 8px;
+	border:1px solid #222;
+	background-color:#222;
+	color:#FFF;
+	resize: none;
+	font-family: Georgia, ""pmingliu"", "Times New Roman", serif;
+}
+#created-comment .clearfix textarea {
+	padding:8px;
+	width:65em;
+}
+#created-comment .clearfix input { width:20em }
+#created-comment .clearfix input:focus,
+#created-comment .clearfix textarea:focus {
+	outline:none;
+	border:1px solid #000;
+	background-color:#000;
+}
+#created-comment .actions button[type=submit],
+#created-comment .actions input[type=submit] {
+	background-color:#222;
+	border:1px solid #000;
+	color:#FFF;
+	cursor: pointer;
+	padding:4px 8px;
+}
+
+
+.pagesize ul { list-style:none;margin:0;padding:0;text-align:center }
+.pagesize ul li { display:inline; }
+
+
+.CodeRay { background-color: #000;color: #FFF; padding: .5em; margin: 0; width: 960px;   }
+.CodeRay pre { font-family: 'Ubuntu Mono'; margin: 0; padding: 0; white-space: pre-wrap; }

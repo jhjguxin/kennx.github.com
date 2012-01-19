@@ -1,12 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>KennX - 宝石之力 </title>
-	<link rel="stylesheet" href="stylesheets/reset.css">
-	<link rel="stylesheet" href="stylesheets/text.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
+	<title>{{ site.title }}</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="css/width-style.css" rel="stylesheet" type="text/css" media="screen and (min-width: 1400px)" />
+	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
 </head>
-<body style="background:#000 url(images/logo.png) center center  no-repeat">
+<body>
+<div id="topbar">
+	<header id="brand">
+		<hgroup>
+			<h1 id="site-title"><a href="/" title="site-title">title</a><small id="sub-title"></small></h1>
+		</hgroup>
+	</header>
+	<nav id="post-nav">
+		<h3>分类列表</h3>
+		<ul>
+			<li><a href="#" title="">Ruby</a><sup></sup></li>
+			<li><a href="" title="">Web</a><sup></sup></li>
+			<li><a href="" title="">Ubuntu</a><sup></sup></li>
+			<li><a href="" title="">发现</a><sup></sup></li>
+			<li><a href="" title="">生活</a><sup></sup></li>
+		</ul>
+	</nav>
+	<nav id="page-nav">
+		<h3>页面列表</h3>
+		<ul>
+			<li><a href="#" title="">关于我</a><sup></sup></li>
+			<li><a href="" title="">作品</a><sup></sup></li>
+		</ul>
+	</nav>
+</div>
+<div id="page-wrap">
+	{% for post in site.posts %}
+	<article class="post-entry">
+		<header>
+			<hgroup>
+				<h1><a href="#" title="post-entry-title">不需要谋知的Firefox</a></h1>
+				<p class="entry-info">{{ post.date | date_to_string }}</p>
+			</hgroup>
+		</header>
+		<div class="post-entry-content">
+			<sup class="sym">“</sup>
+			{{ post.content }}
+		</div>
+	</article>
+	{% endfor %}
+</div>
+<footer id="page-footer">
+	2012 &copy; <a href="http://www.kennx.net" title="KennX">KennX.net</a> :: RubyPower 
+</footer>
 </body>
 </html>
