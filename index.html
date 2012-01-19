@@ -3,14 +3,14 @@ layout: default
 title: KennX - 宝石之力
 ---
 	{% for post in site.posts %}
-	<article class="post-entry">
+	<article class="post">
 		<header>
 			<hgroup>
 				<h1><a href="{{ post.url }}" title="post-entry-title">{{ post.title }}</a></h1>
 				<p class="entry-info">{{ post.date | date_to_string }}</p>
 			</hgroup>
 		</header>
-		<div class="post-entry-content">
+		<div class="post-content">
 			<sup class="sym">“</sup>
 			{{ post.desc }}
 		</div>
